@@ -12,7 +12,7 @@ import {
   createAdminBlobCard, 
   attachAdminCardHandlers 
 } from './components/blob-card.js';
-import { mountWalletConnectButton } from './dapp-kit/connect-button.jsx';
+import { mountWalletConnectButton } from './dapp-kit/connect-button.js';
 
 // State
 let allBlobs = [];

@@ -38,7 +38,7 @@ import {
 } from './utils/batch-operations.js';
 import { initSettingsModal } from './components/settings-modal.js';
 import { WAL_COIN_TYPE } from './config/constants.js';
-import { mountWalletConnectButton } from './dapp-kit/connect-button.jsx';
+import { mountWalletConnectButton } from './dapp-kit/connect-button.js';
 
 // Global state
 let editor = null;

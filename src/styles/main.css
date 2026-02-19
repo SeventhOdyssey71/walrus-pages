@@ -125,12 +125,97 @@ body {
 
 .wallet-connect-root .wallet-connect-button {
   width: 100%;
+  position: relative;
 }
 
 .wallet-connect-root .wallet-connect-button button {
   width: 100%;
   justify-content: center;
   font-weight: 600;
+}
+
+.wallet-picker {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.5rem);
+  z-index: 1000;
+  width: min(20rem, 92vw);
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.16);
+  padding: 0.75rem;
+}
+
+.wallet-picker-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.wallet-picker-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.wallet-option {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  background: var(--background-color);
+  color: var(--text-primary);
+  border-radius: 0.6rem;
+  padding: 0.55rem 0.7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  text-align: left;
+}
+
+.wallet-option:hover {
+  border-color: var(--primary-color);
+  background: var(--surface-color);
+}
+
+.wallet-option.active {
+  border-color: var(--primary-color);
+  background: #eff6ff;
+}
+
+.wallet-option-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 999px;
+  flex: 0 0 auto;
+}
+
+.wallet-option-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.wallet-picker-empty {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  padding: 0.5rem 0.2rem;
+}
+
+.wallet-disconnect-btn {
+  margin-top: 0.65rem;
+  width: 100%;
+  border: 1px solid #fecaca;
+  background: #fef2f2;
+  color: #991b1b;
+  border-radius: 0.6rem;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.wallet-disconnect-btn:hover {
+  background: #fee2e2;
 }
 
 .logo {
@@ -1500,4 +1585,3 @@ body {
     grid-template-columns: 1fr;
   }
 }
-
